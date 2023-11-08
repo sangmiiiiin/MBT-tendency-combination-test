@@ -1,1 +1,0 @@
-# MBT-tendency-combination-test
