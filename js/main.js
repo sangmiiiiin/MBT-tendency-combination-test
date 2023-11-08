@@ -107,9 +107,9 @@ const selectMbti = (e) => {
     }
 
     if (selectedMBTIs.length === 0) {
-        messageBox.innerHTML = "두 MBTI 성향을 클릭하세요";
+        messageBox.innerHTML = "두 MBTI 성향을 클릭하세요.";
     } else if (selectedMBTIs.length === 1) {
-        messageBox.innerHTML = "하나 더 MBTI 성향을 클릭하세요";
+        messageBox.innerHTML = "하나 더 MBTI 성향을 클릭하세요.";
     } else {
         for (let index in combinations[selectedMBTIs[0]].best) {
             if (selectedMBTIs[1] === combinations[selectedMBTIs[0]].best[index]) {
@@ -138,7 +138,7 @@ const selectMbti = (e) => {
         }
 
         if (found !== true) {
-            messageBox.innerHTML =selectedMBTIs[0]+ " 와 " + selectedMBTIs[1] + " 는 " + "평균 적인 조합입니다."
+            messageBox.innerHTML =selectedMBTIs[0]+ " 와 " + selectedMBTIs[1] + " 는 " + "평균적인 조합입니다."
         }
         // combinations[selectedMBTIs[0]].best
         // combinations[selectedMBTIs[0]].good
